@@ -1,0 +1,54 @@
+---
+layout: default
+---
+
+<div class="container">
+  <div class="nav">
+    <div class="wrapper">
+      <ul>
+        <li><a href="https://github.com/jaunesarmiento">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/jaunesarmiento">LinkedIn</a></li>
+        <li><a href="mailto:hawnecarlo@gmail.com">Email</a></li>
+    </div>
+  </div>
+  <div class="splash">
+    <div class="wrapper">
+      <h1>Hi, I'm Jaune.</h1>
+      <h2>I build scalable, maintainable, and user-centric products on ReactJS, React Native, JavaScript, and Swift.</h2>
+    </div>
+  </div>
+  <div class="portfolio">
+    <div class="wrapper">
+      <h3 class="divider">
+        <span>Some of the projects I've worked on</span>
+      </h3>
+      {% assign projects = site.projects | sort: 'year' | reverse %}
+      {% for project in projects %}
+        <div class="project">
+          <div class="project-feature-image" style="background-image: url('{{ project.feature_image }}');"></div>
+          <div class="project-details">
+            {% if project.icon %}
+              <img src="{{ project.icon }}" alt="App Icon" class="project-icon" />
+            {% endif %}
+            <h4 class="project-name">{{ project.name }}</h4>
+            <div class="project-role">{{ project.year }} &middot; {{ project.role }}  &middot; {{ project.company }}</div>
+            <div class="project-description">
+              {{ project.content | markdownify }}
+            </div>
+            <div class="project-links">
+              {% if project.download_url %}
+                <a class="button" href="{{ project.download_url }}" target="_blank">Download</a>
+              {% endif %}
+              {% if project.website_url %}
+                <a class="button" href="{{ project.website_url }}" target="_blank">Website</a>
+              {% endif %}
+              {% if project.press_url %}
+                <a class="button" href="{{ project.press_url }}" target="_blank">Press</a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
