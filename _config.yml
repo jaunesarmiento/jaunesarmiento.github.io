@@ -43,5 +43,12 @@ plugins:
 
 collections:
   projects:
-    sort_by: year
-
+    sort_by: date
+    order:
+      - getsafe.md
+      - slerp.md
+      - viyahe.md
+      - jwlabelstudio.md
+      - amstudio.md
+      - guestlistph.md
+      - fries.md

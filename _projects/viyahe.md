@@ -3,6 +3,7 @@ icon: /images/viyahe_icon.png
 feature_image: /images/viyahe_feature.png
 name: Viyahe
 year: 2017
+date: 2017-01-01
 role: Head of Product
 company: Viyahe
 download_url: https://viyahe.app.link/web
