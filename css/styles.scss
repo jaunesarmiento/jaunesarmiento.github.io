@@ -120,7 +120,9 @@ h4 {
     width: 100%;
     min-height: 437px;
     background-size: contain;
-    flex: 1;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 56px;
   }
 
   .project-details {
