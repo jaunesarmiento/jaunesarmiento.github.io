@@ -9,14 +9,13 @@ layout: default
         <li><a href="https://github.com/jaunesarmiento">GitHub</a></li>
         <li><a href="https://www.linkedin.com/in/jaunesarmiento">LinkedIn</a></li>
         <li><a href="https://medium.com/@jaunesarmiento">Medium</a></li>
-        <li><a href="mailto:hawnecarlo@gmail.com">Email</a></li>
       </ul>
     </div>
   </div>
   <div class="splash">
     <div class="wrapper">
       <h1>Hi, I'm Jaune.</h1>
-      <h2>I build scalable, maintainable, and user-centric products on React, React Native, JavaScript, and Swift.</h2>
+      <h2>I build scalable, maintainable, and user-centric web and mobile products.</h2>
     </div>
   </div>
   <div class="portfolio">
@@ -27,7 +26,6 @@ layout: default
       {% assign projects = site.projects | sort: 'year' | reverse %}
       {% for project in projects %}
         <div class="project">
-          <div class="project-feature-image" style="background-image: url('{{ project.feature_image }}');"></div>
           <div class="project-details">
             {% if project.icon %}
               <img src="{{ project.icon }}" alt="App Icon" class="project-icon" />
@@ -49,6 +47,7 @@ layout: default
               {% endif %}
             </div>
           </div>
+          <img src="{{ project.feature_image }}" class="project-feature-image"/>
         </div>
       {% endfor %}
     </div>

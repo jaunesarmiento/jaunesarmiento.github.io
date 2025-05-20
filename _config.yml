@@ -45,10 +45,8 @@ collections:
   projects:
     sort_by: date
     order:
+      - scalablecapital.md
       - getsafe.md
       - slerp.md
       - viyahe.md
       - jwlabelstudio.md
-      - amstudio.md
-      - guestlistph.md
-      - fries.md
