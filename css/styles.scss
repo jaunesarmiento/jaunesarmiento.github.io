@@ -321,5 +321,13 @@ h4 {
   .project {
     padding: 24px;
     margin-bottom: 24px;
+
+    .project-details {
+      padding: 0;
+    }
+
+    .project-content {
+      padding: 0;
+    }
   }
 }
