@@ -108,6 +108,7 @@ h4 {
 
 .project {
   display: flex;
+  flex-direction: row;
   align-items: center;
   border-radius: 4px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
@@ -116,14 +117,10 @@ h4 {
   min-height: 450px;
 
   .project-feature-image {
-    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 437px;
     background-size: contain;
-    background-position: top right;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0px;
+    flex: 1;
   }
 
   .project-details {
