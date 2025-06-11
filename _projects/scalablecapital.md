@@ -7,6 +7,7 @@ date: 2022-04-01
 role: Senior Software Engineer
 company: Scalable Capital
 website_url: https://de.scalable.capital
+download_url: https://de.scalable.capital/en/invitation/b7czvz
 ---
 
 A leading digital investment platform based in Germany, offering automated ETF portfolios, commission-free stock and crypto trading, and integrated interest-bearing cash accounts.
